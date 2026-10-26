@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#122338" />
+  <title>Auditorías ESD · Línea 12</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" id="brandMark"></div>
+        <div><div class="brand-name">ESD · Auditorías</div><span class="brand-sub">Línea 12</span></div>
+      </div>
+      <div>
+        <div class="nav-label">Trabajo</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <button class="nav-btn active" data-page="equipos"></button>
+          <button class="nav-btn" data-page="auditar"></button>
+          <button class="nav-btn" data-page="historial"></button>
+        </nav>
+      </div>
+      <div class="sidebar-spacer"></div>
+      <div class="help-card">
+        <strong>Base Línea 12</strong>
+        <p>53 equipos del Excel. Importa una versión nueva o descarga el archivo actualizado después de auditar.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="crumb"><span>Operaciones</span><span>/</span><b id="breadcrumb">Línea 12</b></div>
+        <div class="top-actions">
+          <div class="search-wrap" id="globalSearchWrap"><span id="searchIcon"></span><input id="globalSearch" type="search" placeholder="Buscar ID…" aria-label="Buscar ID" /></div>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <button class="active" data-page="equipos"><span class="mobile-icon"></span><span>Equipos</span></button>
+    <button data-page="escanear"><span class="mobile-icon"></span><span>Escanear</span></button>
+    <button class="new-audit" data-page="auditar"><span class="mobile-plus"></span><span>Auditar</span></button>
+    <button data-page="historial"><span class="mobile-icon"></span><span>Historial</span></button>
+  </nav>
+
+  <input id="excelFile" class="hidden" type="file" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+  <div id="overlay"></div>
+  <div id="toastHost" aria-live="polite"></div>
+
+  <script src="vendor/qrious.min.js"></script>
+  <script src="vendor/jsQR.js"></script>
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/excel.js"></script>
+  <script src="js/qr.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

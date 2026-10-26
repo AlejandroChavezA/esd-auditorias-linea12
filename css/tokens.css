@@ -1,0 +1,26 @@
+:root {
+  --ink: #182b40;
+  --ink-soft: #536579;
+  --muted: #8090a1;
+  --line: #e4eaf0;
+  --surface: #ffffff;
+  --canvas: #f4f7fa;
+  --navy: #122338;
+  --navy-2: #1a344e;
+  --teal: #087e78;
+  --teal-soft: #e5f5f2;
+  --blue-soft: #edf4ff;
+  --amber: #a96112;
+  --amber-soft: #fff4df;
+  --red: #b93b45;
+  --red-soft: #fff0f0;
+  --green: #247a56;
+  --green-soft: #eaf7ef;
+  --radius: 16px;
+  --shadow: 0 8px 28px rgba(18, 35, 56, .055);
+}
+
+@keyframes slidein {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
